@@ -70,9 +70,8 @@
 </head>
 <body class="font-body-base text-on-background min-h-screen overflow-x-hidden selection:bg-surface-tint selection:text-surface-container-lowest grid-bg">
     {{ partial "header.html" . }}
-    {{ partial "sidebar.html" . }}
     
-    <main class="md:ml-72 pt-16 min-h-screen relative {{ if .IsHome }}flex flex-col items-center justify-center{{ end }}">
+    <main class="pt-16 min-h-screen relative {{ if .IsHome }}flex flex-col items-center justify-center{{ end }}">
         {{ block "main" . }}{{ end }}
     </main>
 </body>

@@ -1,95 +1,272 @@
 {{ define "main" }}
-<!-- Hero Satellite Background Wrapper -->
-<div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-    <div class="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background z-10 opacity-80"></div>
-    <img alt="Satellite view of Earth" class="w-full h-full object-cover scale-110 opacity-40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-iwRQyLnrizQVQ3gwpVXr_R0FRDP_i74rp8elzgxKn8FiilCZu5EgaKN6Gr4HaStWwQSIS5iAxUKGdWwgTJRGFif8CBIG0IB2sJBwpZQ21goMFjxC2lvQJ6gY_MLeQVcwlLqpiOrVGc3N0odVuJSoQPfvdFXcHs0Tr2Tzfe1I1IRw3uyRf7oWqOf0o4j7dbYTQhdp-KkKISjyWuDssscr8Ic7ILH80FkhE6-pag3CLv4Cn6rwCkvfRTkDV-R1KfzTV-nVV1l8wQ"/>
-    <!-- Orbital Path Overlay (SVG) -->
-    <svg class="absolute inset-0 w-full h-full z-10" preserveaspectratio="none" viewbox="0 0 1000 1000">
-        <ellipse cx="500" cy="500" fill="none" rx="400" ry="250" stroke="rgba(0, 219, 233, 0.2)" stroke-dasharray="10 5" stroke-width="1"></ellipse>
-        <circle class="animate-pulse shadow-[0_0_10px_rgba(0,219,233,0.8)]" cx="900" cy="500" fill="#00dbe9" r="4"></circle>
-    </svg>
+<div class="max-w-7xl mx-auto px-margin py-stack-lg w-full mb-16">
+    <!-- Personnel Dossier Header -->
+    <div class="mb-stack-lg flex flex-col md:flex-row justify-between items-end gap-6 border-b border-cyan-500/20 pb-stack-md">
+        <div class="space-y-unit">
+            <div class="flex items-center gap-2 text-surface-tint">
+                <span class="material-symbols-outlined text-[18px]" data-icon="badge">badge</span>
+                <span class="font-label-caps text-label-caps uppercase">Professional Profile // M.YASSER</span>
+            </div>
+            <h1 class="font-display-xl text-display-xl text-primary leading-none">Remote Sensing Engineer</h1>
+        </div>
+        <div class="flex gap-stack-md">
+            <div class="text-right">
+                <p class="font-label-caps text-label-caps text-slate-500">EXPERIENCE</p>
+                <p class="font-data-mono text-data-mono text-error">5+ YEARS</p>
+            </div>
+            <div class="text-right">
+                <p class="font-label-caps text-label-caps text-slate-500">CURRENT STATUS</p>
+                <p class="font-data-mono text-data-mono text-surface-tint">EMPLOYED</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bento Grid Content -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+        <!-- Profile Identity Card -->
+        <div class="md:col-span-4 glass-panel rounded-lg p-panel-padding flex flex-col items-center text-center relative overflow-hidden group">
+            <div class="absolute top-0 left-0 w-full h-1 bg-surface-tint opacity-50"></div>
+            <div class="w-48 h-48 mb-stack-md rounded-lg overflow-hidden border border-cyan-500/30 p-2 bg-slate-900/50 flex items-center justify-center">
+                <img src="{{ "images/profile_pic.jpg" | absURL }}" alt="Mohamed Yasser Profile" class="w-full h-full object-cover rounded"/>
+            </div>
+            <h3 class="font-headline-md text-headline-md text-primary mb-unit">Mohamed Y. Ayoub</h3>
+            <p class="font-data-mono text-data-mono text-surface-tint mb-stack-md">GIS & REMOTE SENSING SPECIALIST</p>
+            <p class="font-body-base text-body-base text-on-surface-variant text-sm mb-stack-lg">
+                Strategic lead for high-resolution multispectral analysis and automated target recognition systems. Specialized in SAR and LiDAR data fusion for rapid tactical deployment.
+            </p>
+            <div class="flex flex-wrap justify-center gap-unit w-full">
+                <span class="bg-primary-container/10 text-surface-tint px-3 py-1 rounded text-[10px] font-label-caps border border-surface-tint/20">PYTHON</span>
+                <span class="bg-primary-container/10 text-surface-tint px-3 py-1 rounded text-[10px] font-label-caps border border-surface-tint/20">GEE</span>
+                <span class="bg-primary-container/10 text-surface-tint px-3 py-1 rounded text-[10px] font-label-caps border border-surface-tint/20">ARCGIS</span>
+                <span class="bg-primary-container/10 text-surface-tint px-3 py-1 rounded text-[10px] font-label-caps border border-surface-tint/20">SAR</span>
+            </div>
+        </div>
+
+        <!-- Technical Skills Dossiers -->
+        <div class="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-gutter">
+            <!-- Orbital Analysis Dossier -->
+            <div class="glass-panel rounded-lg p-panel-padding relative">
+                <div class="flex items-center gap-3 mb-stack-md">
+                    <span class="w-2 h-2 bg-surface-tint rounded-full"></span>
+                    <h4 class="font-label-caps text-label-caps text-primary tracking-widest">ORBITAL ANALYSIS</h4>
+                </div>
+                <div class="space-y-stack-md">
+                    <div class="space-y-unit">
+                        <div class="flex justify-between text-[11px] font-data-mono">
+                            <span class="text-on-surface">SATELLITE TELEMETRY</span>
+                            <span class="text-surface-tint">94%</span>
+                        </div>
+                        <div class="w-full bg-slate-900 h-1.5 rounded-full">
+                            <div class="bg-surface-tint h-full rounded-full" style="width: 94%"></div>
+                        </div>
+                    </div>
+                    <div class="space-y-unit">
+                        <div class="flex justify-between text-[11px] font-data-mono">
+                            <span class="text-on-surface">SAR PROCESSING</span>
+                            <span class="text-surface-tint">88%</span>
+                        </div>
+                        <div class="w-full bg-slate-900 h-1.5 rounded-full">
+                            <div class="bg-surface-tint h-full rounded-full" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="space-y-unit">
+                        <div class="flex justify-between text-[11px] font-data-mono">
+                            <span class="text-on-surface">MULTISPECTRAL IMAGERY</span>
+                            <span class="text-surface-tint">96%</span>
+                        </div>
+                        <div class="w-full bg-slate-900 h-1.5 rounded-full">
+                            <div class="bg-surface-tint h-full rounded-full" style="width: 96%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-stack-lg pt-stack-md border-t border-white/5">
+                    <p class="font-data-mono text-[11px] text-slate-500 leading-relaxed italic">
+                        "Proven expertise in real-time sensor calibration and atmospheric correction for LEO assets."
+                    </p>
+                </div>
+            </div>
+
+            <!-- Geospatial Engineering Dossier -->
+            <div class="glass-panel rounded-lg p-panel-padding relative">
+                <div class="flex items-center gap-3 mb-stack-md">
+                    <span class="w-2 h-2 bg-primary-fixed-dim rounded-full"></span>
+                    <h4 class="font-label-caps text-label-caps text-primary tracking-widest">GEOSPATIAL ENGINEERING</h4>
+                </div>
+                <div class="space-y-stack-md">
+                    <div class="space-y-unit">
+                        <div class="flex justify-between text-[11px] font-data-mono">
+                            <span class="text-on-surface">GDAL & RASTERIO</span>
+                            <span class="text-surface-tint">92%</span>
+                        </div>
+                        <div class="w-full bg-slate-900 h-1.5 rounded-full">
+                            <div class="bg-surface-tint h-full rounded-full" style="width: 92%"></div>
+                        </div>
+                    </div>
+                    <div class="space-y-unit">
+                        <div class="flex justify-between text-[11px] font-data-mono">
+                            <span class="text-on-surface">SPATIAL RDBMS (POSTGIS)</span>
+                            <span class="text-surface-tint">85%</span>
+                        </div>
+                        <div class="w-full bg-slate-900 h-1.5 rounded-full">
+                            <div class="bg-surface-tint h-full rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="space-y-unit">
+                        <div class="flex justify-between text-[11px] font-data-mono">
+                            <span class="text-on-surface">PYTHON AUTOMATION</span>
+                            <span class="text-surface-tint">95%</span>
+                        </div>
+                        <div class="w-full bg-slate-900 h-1.5 rounded-full">
+                            <div class="bg-surface-tint h-full rounded-full" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-stack-lg pt-stack-md border-t border-white/5">
+                    <p class="font-data-mono text-[11px] text-slate-500 leading-relaxed italic">
+                        "Advanced pipeline development for processing vector data across heterogeneous coordinate systems."
+                    </p>
+                </div>
+            </div>
+
+            <!-- Data Systems Dossier -->
+            <div class="sm:col-span-2 glass-panel rounded-lg p-panel-padding overflow-hidden">
+                <div class="flex items-center justify-between mb-stack-md">
+                    <div class="flex items-center gap-3">
+                        <span class="w-2 h-2 bg-tertiary-fixed-dim rounded-full"></span>
+                        <h4 class="font-label-caps text-label-caps text-primary tracking-widest">DATA SYSTEMS & STACK</h4>
+                    </div>
+                    <span class="font-data-mono text-[10px] text-slate-500 uppercase">System Status: Optimal</span>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-stack-md">
+                    <div class="bg-slate-900/50 p-stack-sm rounded border border-white/5 hover:border-surface-tint/30 transition-colors flex items-center gap-3 group">
+                        <div class="w-8 h-8 rounded bg-surface-container-high flex items-center justify-center text-surface-tint group-hover:bg-surface-tint group-hover:text-black transition-all">
+                            <span class="material-symbols-outlined" data-icon="code">code</span>
+                        </div>
+                        <span class="font-label-caps text-[11px]">PYTHON</span>
+                    </div>
+                    <div class="bg-slate-900/50 p-stack-sm rounded border border-white/5 hover:border-surface-tint/30 transition-colors flex items-center gap-3 group">
+                        <div class="w-8 h-8 rounded bg-surface-container-high flex items-center justify-center text-surface-tint group-hover:bg-surface-tint group-hover:text-black transition-all">
+                            <span class="material-symbols-outlined" data-icon="cloud">cloud</span>
+                        </div>
+                        <span class="font-label-caps text-[11px]">GEE</span>
+                    </div>
+                    <div class="bg-slate-900/50 p-stack-sm rounded border border-white/5 hover:border-surface-tint/30 transition-colors flex items-center gap-3 group">
+                        <div class="w-8 h-8 rounded bg-surface-container-high flex items-center justify-center text-surface-tint group-hover:bg-surface-tint group-hover:text-black transition-all">
+                            <span class="material-symbols-outlined" data-icon="map">map</span>
+                        </div>
+                        <span class="font-label-caps text-[11px]">ARCGIS PRO</span>
+                    </div>
+                    <div class="bg-slate-900/50 p-stack-sm rounded border border-white/5 hover:border-surface-tint/30 transition-colors flex items-center gap-3 group">
+                        <div class="w-8 h-8 rounded bg-surface-container-high flex items-center justify-center text-surface-tint group-hover:bg-surface-tint group-hover:text-black transition-all">
+                            <span class="material-symbols-outlined" data-icon="database">database</span>
+                        </div>
+                        <span class="font-label-caps text-[11px]">POSTGIS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Journey Visual Timeline -->
+        <div class="md:col-span-12 glass-panel rounded-lg p-panel-padding">
+            <div class="flex items-center gap-3 mb-stack-lg">
+                <span class="material-symbols-outlined text-surface-tint" data-icon="history_edu">history_edu</span>
+                <h4 class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Professional Journey // Experience</h4>
+            </div>
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-4 top-0 bottom-0 w-px bg-cyan-500/20 md:left-1/2 md:-ml-px"></div>
+                <div class="space-y-stack-lg">
+                    <!-- Entry 1 -->
+                    <div class="relative flex flex-col md:flex-row md:items-center">
+                        <div class="flex items-center md:contents">
+                            <div class="w-8 h-8 rounded-full bg-surface-container border-2 border-surface-tint z-10 flex items-center justify-center text-surface-tint md:absolute md:left-1/2 md:-ml-4">
+                                <span class="text-[12px] font-bold">01</span>
+                            </div>
+                            <div class="ml-10 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
+                                <p class="font-label-caps text-[11px] text-surface-tint mb-1">AUG 2025 — PRESENT</p>
+                                <h5 class="font-headline-md text-sm text-primary uppercase tracking-tight">IMAGERY & REMOTE SENSING EXPERT @ ESRI KSA</h5>
+                                <p class="font-body-base text-xs text-on-surface-variant mt-2">Delivering high-impact imagery and remote sensing solutions for enterprise clients. Designing architectures for integrating satellite products into large-scale enterprise GIS systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Entry 2 -->
+                    <div class="relative flex flex-col md:flex-row-reverse md:items-center">
+                        <div class="flex items-center md:contents">
+                            <div class="w-8 h-8 rounded-full bg-surface-container border-2 border-slate-700 z-10 flex items-center justify-center text-slate-500 md:absolute md:left-1/2 md:-ml-4">
+                                <span class="text-[12px] font-bold">02</span>
+                            </div>
+                            <div class="ml-10 md:ml-0 md:w-1/2 md:pl-12">
+                                <p class="font-label-caps text-[11px] text-slate-500 mb-1">DEC 2024 — PRESENT</p>
+                                <h5 class="font-headline-md text-sm text-primary uppercase tracking-tight">SATELLITE DATA ENGINEER @ REMOTELY</h5>
+                                <p class="font-body-base text-xs text-on-surface-variant mt-2">Developing algorithms for processing and interpreting complex satellite imagery datasets and conducting intensive R&D to validate new geospatial technologies.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Entry 3 -->
+                    <div class="relative flex flex-col md:flex-row md:items-center">
+                        <div class="flex items-center md:contents">
+                            <div class="w-8 h-8 rounded-full bg-surface-container border-2 border-slate-700 z-10 flex items-center justify-center text-slate-500 md:absolute md:left-1/2 md:-ml-4">
+                                <span class="text-[12px] font-bold">03</span>
+                            </div>
+                            <div class="ml-10 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
+                                <p class="font-label-caps text-[11px] text-slate-500 mb-1">AUG 2023 — PRESENT</p>
+                                <h5 class="font-headline-md text-sm text-primary uppercase tracking-tight">GIS & RS ENGINEER @ EGYPTIAN SPACE AGENCY</h5>
+                                <p class="font-body-base text-xs text-on-surface-variant mt-2">Performing advanced image classification, change detection, and feature extraction on SAR and multispectral data. Operating MISRSAT-2 systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Strategic Summary / Map -->
+        <div class="md:col-span-12 glass-panel rounded-lg overflow-hidden border border-surface-tint/20 h-96 relative group z-10" id="work-map">
+            <!-- Map will be injected here -->
+        </div>
+    </div>
 </div>
 
-<!-- Center Content -->
-<div class="relative z-20 text-center px-margin max-w-5xl">
-    <div class="inline-flex items-center gap-unit px-unit py-unit mb-stack-md bg-cyan-400/10 border border-cyan-400/20 rounded-lg">
-        <span class="w-2 h-2 bg-cyan-400 rounded-full animate-ping"></span>
-        <span class="font-label-caps text-label-caps text-cyan-400 ml-2">SYSTEMS_ACTIVE // LINK_ESTABLISHED</span>
-    </div>
-    <h1 class="font-display-xl text-display-xl text-primary mb-stack-lg leading-tight uppercase tracking-tighter">
-        MOHAMED YASSER // <br/>
-        <span class="text-surface-tint">PORTFOLIO & BLOG</span>
-    </h1>
-    <div class="flex flex-col sm:flex-row gap-gutter justify-center items-center">
-        <a href="{{ "projects/" | absURL }}" class="px-10 py-5 bg-surface-tint text-background font-label-caps text-label-caps rounded-none hover:shadow-[0_0_25px_rgba(0,219,233,0.5)] transition-all duration-300 transform hover:-translate-y-1 active:scale-95 flex items-center gap-stack-sm">
-            VIEW PROJECTS
-            <span class="material-symbols-outlined text-[18px]" data-icon="work">work</span>
-        </a>
-        <a href="{{ "blog/" | absURL }}" class="px-10 py-5 border border-surface-tint text-surface-tint font-label-caps text-label-caps rounded-none hover:bg-surface-tint/10 transition-all duration-300 transform hover:-translate-y-1 active:scale-95 flex items-center gap-stack-sm">
-            READ BLOG
-            <span class="material-symbols-outlined text-[18px]" data-icon="article">article</span>
-        </a>
-    </div>
-</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        if(document.getElementById('work-map')) {
+            var map = L.map('work-map', {
+                center: [28.0, 38.0],
+                zoom: 4,
+                zoomControl: false,
+                scrollWheelZoom: false
+            });
 
-<!-- Bottom Real-time Data Widgets -->
-<div class="absolute bottom-margin left-margin right-margin grid grid-cols-1 md:grid-cols-4 gap-gutter z-20">
-    <!-- Widget 1: Lat/Long -->
-    <div class="glass-panel border-glow p-panel-padding">
-        <div class="flex items-center gap-unit mb-unit">
-            <div class="w-1.5 h-1.5 bg-surface-tint rounded-sm"></div>
-            <span class="font-label-caps text-[10px] text-slate-500">LOCATION_FIX</span>
-        </div>
-        <div class="font-data-mono text-data-mono text-surface-tint flex flex-col">
-            <span>LAT: 30.0263° N</span>
-            <span>LONG: 31.4968° E</span>
-        </div>
-        <div class="mt-stack-sm h-1 bg-slate-900 overflow-hidden">
-            <div class="h-full bg-surface-tint/50 w-3/4"></div>
-        </div>
-    </div>
-    <!-- Widget 2: Role -->
-    <div class="glass-panel border-glow p-panel-padding">
-        <div class="flex items-center gap-unit mb-unit">
-            <div class="w-1.5 h-1.5 bg-surface-tint rounded-sm"></div>
-            <span class="font-label-caps text-[10px] text-slate-500">CURRENT_ROLE</span>
-        </div>
-        <div class="font-data-mono text-data-mono text-primary flex flex-col">
-            <span class="text-headline-md font-bold">GIS & RS ENGINEER</span>
-            <span class="text-xs text-slate-400">STATUS: ACTIVE</span>
-        </div>
-    </div>
-    <!-- Widget 3: Activity -->
-    <div class="glass-panel border-glow p-panel-padding">
-        <div class="flex items-center gap-unit mb-unit">
-            <div class="w-1.5 h-1.5 bg-surface-tint rounded-sm"></div>
-            <span class="font-label-caps text-[10px] text-slate-500">ACTIVITY_LOG</span>
-        </div>
-        <div class="flex items-end gap-1 h-12 pt-2">
-            <div class="flex-1 bg-surface-tint/20 h-4"></div>
-            <div class="flex-1 bg-surface-tint/40 h-8"></div>
-            <div class="flex-1 bg-surface-tint/60 h-12"></div>
-            <div class="flex-1 bg-surface-tint/40 h-6"></div>
-            <div class="flex-1 bg-surface-tint/80 h-10"></div>
-            <div class="flex-1 bg-surface-tint h-14"></div>
-            <div class="flex-1 bg-surface-tint/50 h-5"></div>
-            <div class="flex-1 bg-surface-tint/30 h-9"></div>
-        </div>
-    </div>
-    <!-- Widget 4: Experience -->
-    <div class="glass-panel border-glow p-panel-padding">
-        <div class="flex items-center gap-unit mb-unit">
-            <div class="w-1.5 h-1.5 bg-surface-tint rounded-sm"></div>
-            <span class="font-label-caps text-[10px] text-slate-500">EXPERIENCE</span>
-        </div>
-        <div class="font-data-mono text-data-mono text-primary flex items-baseline gap-unit">
-            <span class="text-headline-md font-bold">5+</span>
-            <span class="text-xs text-slate-500">YEARS</span>
-        </div>
-        <div class="text-[10px] text-emerald-400 flex items-center gap-1 mt-1">
-            <span class="material-symbols-outlined text-[12px]" data-icon="trending_up">trending_up</span>
-            <span>PROFESSIONAL_JOURNEY</span>
-        </div>
-    </div>
-</div>
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                attribution: '&copy; OpenStreetMap &copy; CARTO',
+                subdomains: 'abcd',
+                maxZoom: 20
+            }).addTo(map);
+
+            var locations = [
+                { name: "Esri KSA", loc: [24.7136, 46.6753], role: "Imagery & RS Expert" },
+                { name: "Remotely", loc: [35.6762, 139.6503], role: "Satellite Data Engineer" },
+                { name: "EgSA", loc: [30.0263, 31.4968], role: "GIS & RS Engineer" },
+                { name: "Nautilus", loc: [25.6872, 32.6396], role: "GIS & Database Geologist" },
+                { name: "Project: Flood Monitoring", loc: [14.4974, -14.4524], role: "SAR Analysis" },
+                { name: "Project: Nile Dam", loc: [11.2144, 34.9875], role: "Hydrological Monitoring" },
+                { name: "Project: Hazard Mapping", loc: [7.54, -5.5471], role: "Risk Assessment" }
+            ];
+
+            var customIcon = L.divIcon({
+                className: 'custom-div-icon',
+                html: "<div style='background-color:#00dbe9;width:12px;height:12px;border-radius:50%;box-shadow:0 0 10px #00dbe9; border: 2px solid #0e131e'></div>",
+                iconSize: [12, 12],
+                iconAnchor: [6, 6]
+            });
+
+            locations.forEach(function(l) {
+                L.marker(l.loc, {icon: customIcon}).addTo(map)
+                 .bindPopup("<div class='font-mono text-xs p-1'><b>" + l.name + "</b><br>" + l.role + "</div>");
+            });
+
+            // Re-render map tiles correctly inside flex/grid layouts
+            setTimeout(function(){ map.invalidateSize(); }, 500);
+        }
+    });
+</script>
 {{ end }}
