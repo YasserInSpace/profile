@@ -45,12 +45,27 @@
         .scanline { background: linear-gradient(to bottom, transparent 50%, rgba(0, 219, 233, 0.02) 50%); background-size: 100% 4px; }
         
         /* Markdown Styles */
-        .markdown-body h2 { @apply font-headline-md text-primary mt-8 mb-4 text-2xl; }
+        .markdown-body h1 { @apply font-display-xl text-primary mt-10 mb-6 text-3xl; }
+        .markdown-body h2 { @apply font-headline-md text-primary mt-8 mb-4 text-2xl border-b border-surface-tint/20 pb-2; }
         .markdown-body h3 { @apply font-headline-md text-surface-tint mt-6 mb-3 text-xl; }
-        .markdown-body p { @apply font-body-base text-on-surface-variant mb-4; }
-        .markdown-body ul { @apply list-disc list-inside text-on-surface-variant mb-4; }
-        .markdown-body li { @apply mb-1; }
-        .markdown-body a { @apply text-surface-tint hover:underline; }
+        .markdown-body h4 { @apply font-headline-md text-secondary mt-4 mb-2 text-lg; }
+        .markdown-body p { @apply font-body-base text-on-surface-variant mb-6 leading-relaxed; }
+        .markdown-body ul { @apply list-disc list-outside ml-6 text-on-surface-variant mb-6 space-y-2; }
+        .markdown-body ol { @apply list-decimal list-outside ml-6 text-on-surface-variant mb-6 space-y-2; }
+        .markdown-body li { @apply pl-1; }
+        .markdown-body a { @apply text-surface-tint hover:text-primary underline decoration-surface-tint/30 underline-offset-4 transition-colors; }
+        .markdown-body strong { @apply text-on-background font-bold; }
+        .markdown-body em { @apply text-secondary italic; }
+        .markdown-body blockquote { @apply border-l-4 border-surface-tint/50 bg-surface-container/30 pl-4 py-2 mb-6 italic text-on-surface-variant rounded-r; }
+        .markdown-body pre { @apply bg-[#0b1120] border border-outline-variant/30 rounded-lg p-4 mb-6 overflow-x-auto text-sm shadow-inner; }
+        .markdown-body code { @apply font-data-mono bg-[#0b1120] text-secondary-fixed px-1.5 py-0.5 rounded border border-outline-variant/30 text-[0.9em]; }
+        .markdown-body pre code { @apply bg-transparent border-none p-0 text-secondary-fixed; }
+        .markdown-body img { @apply rounded-lg border border-surface-tint/20 shadow-lg my-8 max-w-full h-auto; }
+        .markdown-body hr { @apply border-outline-variant/20 my-8; }
+        .markdown-body table { @apply w-full mb-6 text-left border-collapse; }
+        .markdown-body th { @apply border-b border-outline-variant/30 p-3 font-label-caps text-surface-tint uppercase bg-surface-container/50; }
+        .markdown-body td { @apply border-b border-outline-variant/10 p-3 text-on-surface-variant; }
+        .markdown-body tr:hover td { @apply bg-surface-container/30; }
     </style>
 </head>
 <body class="font-body-base text-on-background min-h-screen overflow-x-hidden selection:bg-surface-tint selection:text-surface-container-lowest grid-bg">

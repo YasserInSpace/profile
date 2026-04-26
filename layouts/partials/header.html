@@ -7,10 +7,22 @@
     </div>
     <div class="flex items-center gap-stack-md text-cyan-400">
         <a href="mailto:mohamed.yasser.ayoub@gmail.com" class="material-symbols-outlined cursor-pointer active:opacity-70 hover:text-cyan-300 transition-colors" data-icon="mail">mail</a>
-        <a href="https://github.com/YasserInSpace" target="_blank" class="cursor-pointer active:opacity-70 hover:text-cyan-300 transition-colors font-mono font-bold text-lg">GH</a>
+        <a href="https://github.com/YasserInSpace" target="_blank" class="cursor-pointer active:opacity-70 hover:text-cyan-300 transition-colors text-xl"><i class="fa-brands fa-github"></i></a>
+        <button id="mobile-menu-btn" class="md:hidden material-symbols-outlined cursor-pointer active:opacity-70 hover:text-cyan-300 transition-colors" data-icon="menu">menu</button>
     </div>
 </header>
 <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const sidebar = document.getElementById('main-sidebar');
+        if(menuBtn && sidebar) {
+            menuBtn.addEventListener('click', function() {
+                sidebar.classList.toggle('hidden');
+                sidebar.classList.toggle('flex');
+            });
+        }
+    });
+
     function updateClock() {
         const now = new Date();
         const timeString = now.toISOString().replace('T', ' // ').substring(0, 19) + ' UTC';
