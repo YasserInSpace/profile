@@ -11,7 +11,7 @@
         </div>
     </div>
     <nav class="flex-1">
-        <a class="{{ if .IsHome }}bg-cyan-400/10 text-cyan-400 border-l-4 border-cyan-400{{ else }}text-slate-500{{ end }} flex items-center px-6 py-4 font-inter text-sm font-medium hover:bg-slate-900/80 hover:text-cyan-200 transition-all duration-200 ease-in-out transform active:scale-95" href="{{ "/" | absURL }}">
+        <a class="{{ if .IsHome }}bg-cyan-400/10 text-cyan-400 border-l-4 border-cyan-400{{ else }}text-slate-500{{ end }} flex items-center px-6 py-4 font-inter text-sm font-medium hover:bg-slate-900/80 hover:text-cyan-200 transition-all duration-200 ease-in-out transform active:scale-95" href="{{ .Site.BaseURL }}">
             <span class="material-symbols-outlined mr-unit" data-icon="home">home</span>
             <span>Home</span>
         </a>
