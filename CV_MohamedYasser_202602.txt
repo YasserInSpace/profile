@@ -1,0 +1,332 @@
+Mohamed Y. Ayoub
+Alexandria, Egypt
+
++20 1555 864 314
+
+m.yasser.ayoub@gmail.com
+
+linkedin.com/in/mo7yasser
+
+WORK EXPERIENCE
+Imagery and Remote Sensing Expert, Esri Saudi Arabia
+Support and deliver imagery and remote sensing solutions for clients across
+different sectors.
+Provide technical consultations, demonstrations, and training related to imagery
+and geospatial analysis.
+Collaborate with GIS teams and stakeholders to integrate imagery products into
+enterprise GIS systems.
+Contribute to proposal preparation, technical documentation, and solution design.
+
+August 2025 – Present
+Riyadh, Saudi Arabia
+
+Satellite Data Analysis Engineer, Remotely, Solafune, Inc.
+Developing and validating technologies for new satellite data analysis projects.
+Conducting extensive research on geospatial data, GIS, and remote sensing for R&D
+initiatives.
+Creating and optimizing algorithms for processing and interpreting satellite
+imagery.
+Writing Proof of Concept (PoC) proposals for clients, demonstrating the feasibility
+and potential of satellite data solutions.
+
+December 2024 – Present
+Tokyo, Japan
+
+GIS & Remote Sensing Engineer, Egyptian Space Agency
+Conducting satellite image preprocessing and developing product quality matrices
+to ensure data integrity and accuracy.
+Performing image classification, change detection, and feature extraction on
+multispectral, and radar imagery for comprehensive analytical insights.
+Developing GIS-based solutions to integrate pre-processed satellite imagery for
+spatial analysis, visualization, and decision support.
+Collaborate closely with cross-functional teams to integrate imagery processing
+and analysis into larger GIS and Remote Sensing solutions, enhancing project
+outcomes.
+Performing GIS database development, conducting qualitative and quantitative
+analysis, and creating maps.
+Responsible for the operation of MISRSAT-2 DMS, IPS, and TAS.
+Provide training and support to university students on best practices for imagery
+analysis using Python, ArcGIS Pro, QGIS, and SAGA, fostering a strong
+understanding of GIS and Remote Sensing principles.
+
+August 2023 – present
+New Cairo, Egypt
+
+GIS & Database Geologist, Nautilus Mineral Resources
+Analyzed spectral data from remote sensing sources, including hyperspectral
+imagery, to interpret geological features and enhance mineral exploration efforts.
+Identified potential mineral deposits using spectral signature analysis, employing
+techniques such as band rationing, principal component analysis (PCA), spectral
+angle mapping (SAM), and other advanced methodologies to enhance mineral
+exploration accuracy.
+Conducted structural analysis by generating structure maps using both manual
+and automatic lineament extraction techniques, including edge detection filters
+(e.g., Sobel, Canny), Hough transform, and directional filtering on multispectral,
+SAR, and DEM data.
+Managed geological databases to efficiently organize and maintain geological and
+geospatial data.
+Ensured data accuracy and reliability through validation and quality control
+checks.
+Participated in field data collection activities for inclusion in the GIS system.
+
+September 2022 – May 2023
+Luxor, Egypt
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+Mohamed Y. Ayoub
+
+1/4
+
+Field Geologist, Nautilus Mineral Resources
+Mapped out areas of interest.
+Conducted drilling operations, equipment setup, core logging, and core sample
+collection.
+Conducted trenching and excavation to expose geological strata for analysis.
+Followed up on exploration efforts by assaying trenches, channels, and old
+workings to provide pointers toward anomalous gold concentrations.
+Worked alongside mining engineers to facilitate ore production.
+Led a team of technicians and workers ensuring compliance with health and safety
+regulations.
+Dispatched the samples to the lab.
+Reported daily, weekly, and monthly activities.
+
+January 2022 – August 2022
+Marsa Allam, Egypt
+
+GIS & Mapping Engineer, Brightskies Technologies Inc.
+Created HD maps. This involved the collection, processing, and organization of
+geographic data to construct precise.
+Developed and implemented advanced scripts and tools to facilitate the seamless
+conversion of maps between XODR (OpenDRIVE) and OSM (OpenStreetMap)
+formats, ensuring compatibility, accessibility, and ease of integration into diverse
+GIS platforms and applications.
+Integrated XODR maps with MATLAB Roadrunner, a sophisticated simulation
+environment, which enabled the generation of FBX maps for seamless importation
+into the simulation environment.
+
+July 2021 – December 2021
+Alexandria, Egypt
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+EDUCATION
+Geoinformatics Diploma, Information Technology Institute (ITI) / Ministry of
+Communications and Information Technology (MCIT).
+
+April 2021 –
+September 2021
+Alexandria, Egypt
+
+Bachelor of Science in Earth Science, Faculty of Science, Alexandria University
+Rank: 6th.
+Graduation Project: Tectonic History of East Mediterranean Region & Hydrocarbon
+Potentiality, Grade: Excellent
+
+2016 – 2020
+Alexandria, Egypt
+
+•
+
+•
+
+PROJECTS
+Natural Hazard Risk Mapping and Assessment – Côte d’Ivoire, Collaboration with
+lateforme Nationale de Réduction des Risques et de gestion des Catastrophes (PN-RRC)
+and the Office National de la Protection Civile (ONPC) under funding initiative by
+International Organization for Migration (IOM)
+Contributed to the development and delivery of a web-based platform for multihazard risk mapping and disaster impact assessment in the Bounkani and Tchologo
+regions of northeastern Côte d’Ivoire. Processed and analyzed multi-source satellite
+and geospatial datasets—including optical and SAR imagery, DEMs, climate, land
+cover, and socio-economic data—to generate hazard, exposure, vulnerability, and risk
+layers integrated into the platform. Developed methodologies and workflows
+supporting flood and multi-hazard monitoring, impact analysis, and disaster
+preparedness. Contributed to technical documentation, analytical pipelines, and
+training materials to facilitate system deployment and capacity building for national
+agencies such as ONPC and PN-RRC, ensuring sustainable use and practical
+application of the platform.
+
+Mohamed Y. Ayoub
+
+August 2025 – January 2026
+
+2/4
+
+Flood Management System Project – Senegal, Collaboration with Agence Sénégalaise
+d'Études Spatiales (ASES) under funding initiative by Ministry of Economy, Trade and
+Industry (METI)
+Contributed to the design and delivery of a web-based flood monitoring and
+forecasting application that provides near–real-time situational awareness for
+riverine flooding. This involved processing and analyzing multi-source Earthobservation data, including optical imagery, SAR, DEMs, and hydrological datasets, to
+generate flood extent, risk, and vulnerability layers integrated into the platform.
+Developed workflows supporting flood monitoring, forecasting, and impact
+assessment for events along the Senegal and Casamance River basins. Additionally,
+contributed to the creation of technical documentation, analytical pipelines, and
+training materials to facilitate system deployment and build stakeholder capacity.
+
+January 2025 –
+January 2026
+
+Nile River Reservoir Dams Monitoring System
+Developed a sophisticated decision support system for the monitoring of the Nile
+River Reservoir Dams (NRRD). This system leverages satellite data and employs
+advanced artificial intelligence techniques to continuously assess and report on the
+various features and status of the NRRD, ensuring effective and data-driven
+management.
+
+August 2023 – present
+
+KAUST Self-driving System
+A set of procedural steps has been developed for the creation of high-definition (HD)
+maps to be used in autonomous vehicle systems. These maps are generated by
+combining satellite imagery, GPS data, and LIDAR data.
+
+July 2021 – December 2021
+
+Tectonic History of East Mediterranean Region & Hydrocarbon Potentiality,
+Graduation Project
+
+September 2020
+
+COURSES
+Introduction to Hyperspectral Remote Sensing, EO College
+Remote Sensing Image Acquisition, Analysis and Applications, UNSW Sydney
+
+September 2023
+August 2023
+
+Classifying Objects Using Deep Learning in ArcGIS Pro, Esri
+
+June 2023
+
+Performing Hydrological Analysis Using ArcGIS Pro, Esri
+
+June 2023
+
+Basics of Remote Sensing, EO College
+
+December 2022
+
+Digital Transformation of Mining, Curtin University
+
+November 2022
+
+Spatial Data Science and Applications, Coursera
+
+August 2022
+
+Remote Sensing and Satellite Image Processing with the EOS Platform,
+GEO University
+
+June 2022
+
+SQL Programming, LinkedIn Learning
+
+July 2021
+
+Programming Foundations: Databases, LinkedIn Learning
+
+July 2021
+
+Python Data Structure, Mahara Tech
+
+April 2021
+
+Machine Learning Developer Track, Google
+
+February 2021
+
+Geographic Information Systems (GIS) Specialization., University of California, Davis
+
+October 2019
+
+Mohamed Y. Ayoub
+
+3/4
+
+LANGUAGES
+Arabic — Native, English — Very Good at talking,
+listening, and writing.
+
+SKILLS
+GIS & Remote Sensing Software — QGIS | ArcGIS
+(ArcGIS Pro, ArcGIS Online, ArcGIS Web App Builder,
+ArcGIS Dashboards) | Global Mapper | SAGA | Erdas
+Imagine | Envi | SNAP | Leapfrog Geo | Locus Map |
+Base Camp | Map Source
+Programming & Development — Python (Dash,
+Streamlit, Flask, Leaflet, GDAL, Rasterio, Geopandas,
+Shapely, Pyproj, Fiona, STAC, openEO, and Google Earth
+Engine (GEE)) | SQL | Geoserver | HTML | CSS
+
+PERSONAL INFORMATION
+Date of Birth: July 9, 1998
+Nationality: Egyptian
+Military Service: Exempted
+Driving License: Egyptian (license valid until 2032)
+
+Mohamed Y. Ayoub
+
+4/4
+
+

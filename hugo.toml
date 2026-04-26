@@ -1,0 +1,11 @@
+baseURL = "https://mo7yasser.github.io/"
+languageCode = "en-us"
+title = "Mohamed Y. Ayoub | Portfolio"
+theme = ""
+disableKinds = ["taxonomy", "term"] # Disable taxonomies until we need them
+
+[params]
+  description = "Imagery and Remote Sensing Expert"
+  author = "Mohamed Y. Ayoub"
+  github = "mo7yasser"
+  linkedin = "mo7yasser"

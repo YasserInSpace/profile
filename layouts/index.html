@@ -1,0 +1,33 @@
+{{ define "main" }}
+<div class="hero section">
+    <div class="hero-content">
+        <h1 class="hero-title">Mapping the <span class="text-accent">Earth</span> with Data.</h1>
+        <p class="hero-subtitle">{{ .Site.Params.description }}</p>
+        <div class="hero-text">
+            {{ .Content }}
+        </div>
+        <div class="hero-actions">
+            <a href="{{ "/portfolio/" | relURL }}" class="btn btn-primary">View Portfolio</a>
+            <a href="{{ "/projects/" | relURL }}" class="btn btn-secondary">Explore Projects</a>
+        </div>
+    </div>
+</div>
+
+<section class="latest-insights section">
+    <h2>Latest Insights</h2>
+    <div class="post-grid">
+        {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
+        <a href="{{ .RelPermalink }}" class="post-card">
+            <div class="post-date">{{ .Date.Format "January 2, 2006" }}</div>
+            <h3 class="post-title">{{ .Title }}</h3>
+            <p class="post-summary">{{ .Summary | truncate 120 }}</p>
+            <div class="post-tags">
+                {{ range .Params.tags }}
+                <span class="tag">#{{ . }}</span>
+                {{ end }}
+            </div>
+        </a>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

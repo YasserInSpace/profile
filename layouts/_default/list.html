@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section class="page-list section">
+    <header class="page-header">
+        <h1 class="page-title">{{ .Title }}</h1>
+        {{ if .Content }}
+        <div class="content-intro markdown-body">
+            {{ .Content }}
+        </div>
+        {{ end }}
+    </header>
+
+    <div class="post-grid">
+        {{ range .Pages }}
+        <a href="{{ .RelPermalink }}" class="post-card">
+            {{ if .Date }}<div class="post-date">{{ .Date.Format "January 2, 2006" }}</div>{{ end }}
+            <h3 class="post-title">{{ .Title }}</h3>
+            <p class="post-summary">{{ .Summary | truncate 150 }}</p>
+        </a>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
