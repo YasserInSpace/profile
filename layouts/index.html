@@ -1,20 +1,20 @@
 {{ define "main" }}
 <div class="hero section">
     <div class="hero-content">
-        <h1 class="hero-title">Mapping the <span class="text-accent">Earth</span> with Data.</h1>
-        <p class="hero-subtitle">{{ .Site.Params.description }}</p>
+        <h1 class="hero-title">Mohamed Y. Ayoub</h1>
+        <p class="hero-subtitle">Remote Sensing & GIS Engineer</p>
         <div class="hero-text">
-            {{ .Content }}
+            <p>Specializing in satellite data analysis, Earth observation, and developing geospatial solutions.</p>
         </div>
         <div class="hero-actions">
-            <a href="{{ "portfolio/" | absURL }}" class="btn btn-primary">View Portfolio</a>
-            <a href="{{ "projects/" | absURL }}" class="btn btn-secondary">Explore Projects</a>
+            <a href="{{ "projects/" | absURL }}" class="btn btn-primary"><i class="fa-solid fa-satellite"></i> View Projects</a>
+            <a href="#contact" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> Contact Me</a>
         </div>
     </div>
 </div>
 
 <section class="latest-insights section">
-    <h2>Latest Insights</h2>
+    <h2><i class="fa-solid fa-newspaper"></i> Latest Insights</h2>
     <div class="post-grid">
         {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
         <a href="{{ .RelPermalink }}" class="post-card">
@@ -28,6 +28,23 @@
             </div>
         </a>
         {{ end }}
+    </div>
+</section>
+
+<section id="contact" class="contact section">
+    <h2><i class="fa-solid fa-address-card"></i> Let's Connect</h2>
+    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+    <div class="contact-links">
+        <a href="mailto:m.yasser.ayoub@gmail.com" class="contact-card">
+            <i class="fa-solid fa-envelope fa-2x"></i>
+            <h3>Email</h3>
+            <p>m.yasser.ayoub@gmail.com</p>
+        </a>
+        <a href="https://linkedin.com/in/mo7yasser" target="_blank" rel="noopener" class="contact-card">
+            <i class="fa-brands fa-linkedin fa-2x"></i>
+            <h3>LinkedIn</h3>
+            <p>linkedin.com/in/mo7yasser</p>
+        </a>
     </div>
 </section>
 {{ end }}
