@@ -1,22 +1,28 @@
 {{ define "main" }}
-<article class="page-single section">
-    <header class="page-header">
-        <h1 class="page-title">{{ .Title }}</h1>
-        {{ if eq .Section "blog" }}
-        <div class="post-meta">
-            <span class="date">{{ .Date.Format "January 2, 2006" }}</span>
-            {{ with .Params.tags }}
-            <div class="post-tags">
-                {{ range . }}
-                <span class="tag">#{{ . }}</span>
+<div class="max-w-4xl mx-auto px-10 py-10 w-full mb-16">
+    <article class="glass-panel p-8 rounded-lg relative overflow-hidden">
+        <div class="scanline absolute inset-0 pointer-events-none opacity-20"></div>
+        <div class="relative z-10">
+            <header class="mb-8 border-b border-cyan-500/20 pb-6">
+                <div class="flex items-center gap-3 mb-2">
+                    <span class="font-data-mono text-xs text-surface-tint bg-primary-container/10 px-2 py-1 rounded">LOG-{{ substr .File.UniqueID 0 6 | upper }}</span>
+                    {{ if .Date }}
+                    <span class="font-data-mono text-xs text-slate-500">{{ .Date.Format "2006.01.02 // 15:04 UTC" }}</span>
+                    {{ end }}
+                </div>
+                <h1 class="font-display-xl text-primary">{{ .Title }}</h1>
+                {{ with .Params.tags }}
+                <div class="flex gap-2 mt-4">
+                    {{ range . }}
+                    <span class="px-2 py-0.5 rounded border border-slate-700 font-label-caps text-[10px] text-slate-400 uppercase">{{ . }}</span>
+                    {{ end }}
+                </div>
                 {{ end }}
+            </header>
+            <div class="markdown-body">
+                {{ .Content }}
             </div>
-            {{ end }}
         </div>
-        {{ end }}
-    </header>
-    <div class="content markdown-body">
-        {{ .Content }}
-    </div>
-</article>
+    </article>
+</div>
 {{ end }}
