@@ -5,7 +5,7 @@
         <div class="space-y-unit">
             <div class="flex items-center gap-2 text-surface-tint">
                 <span class="material-symbols-outlined text-[18px]" data-icon="badge">badge</span>
-                <span class="font-label-caps text-label-caps uppercase">Personnel File // ID-992-ALPHA</span>
+                <span class="font-label-caps text-label-caps uppercase">Professional Profile // M.YASSER</span>
             </div>
             <h1 class="font-display-xl text-display-xl text-primary leading-none">Remote Sensing Engineer</h1>
         </div>
@@ -220,22 +220,50 @@
         </div>
 
         <!-- Strategic Summary / Map -->
-        <div class="md:col-span-12 glass-panel rounded-lg overflow-hidden border border-surface-tint/20 h-64 relative group">
-            <div class="absolute inset-0 z-0">
-                <img alt="Global Map" class="w-full h-full object-cover brightness-[0.3] group-hover:scale-105 transition-transform duration-[20s]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOG8X-yO4GnBCteSX5Tok7aUvfkGS-vh7dAGQWfXbv22gHno9OteIkatGxcJNuuVz-u_ZcKcJZgtL2zfTF5PliM6o8zqXM-U8MewY1Clk5UnyPBQd3Q_KhPDRQY0icXfHWf7FTqlBFqgDgqpBxnYzUoniWFOZYEb9vd7b07p1wyp0AwQ6BZnuF8qZDjdQEXL91x2Vz9rDs-XLVniKpFRuUGzak7yDTcs5FRcI4qNR0puuYLxI0ROUWksbA1kVIF64y9DccKe2aAA"/>
-            </div>
-            <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10"></div>
-            <div class="absolute bottom-panel-padding left-panel-padding z-20">
-                <h4 class="font-headline-md text-primary">OPERATIONAL THEATER</h4>
-                <p class="font-data-mono text-xs text-surface-tint">GEO-SYNCHRONOUS COVERAGE: 99.8% GLOBAL UP-TIME</p>
-            </div>
-            <div class="absolute top-panel-padding right-panel-padding z-20 bg-black/50 p-stack-sm rounded backdrop-blur">
-                <div class="flex items-center gap-2">
-                    <span class="w-2 h-2 bg-error animate-pulse rounded-full"></span>
-                    <span class="font-label-caps text-[10px] text-error">LIVE SIGNAL</span>
-                </div>
-            </div>
+        <div class="md:col-span-12 glass-panel rounded-lg overflow-hidden border border-surface-tint/20 h-96 relative group z-10" id="work-map">
+            <!-- Map will be injected here -->
         </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        if(document.getElementById('work-map')) {
+            var map = L.map('work-map', {
+                center: [28.0, 38.0],
+                zoom: 4,
+                zoomControl: false,
+                scrollWheelZoom: false
+            });
+
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                attribution: '&copy; OpenStreetMap &copy; CARTO',
+                subdomains: 'abcd',
+                maxZoom: 20
+            }).addTo(map);
+
+            var locations = [
+                { name: "Esri KSA", loc: [24.7136, 46.6753], role: "Imagery & RS Expert" },
+                { name: "Remotely", loc: [35.6762, 139.6503], role: "Satellite Data Engineer" },
+                { name: "EgSA", loc: [30.0263, 31.4968], role: "GIS & RS Engineer" },
+                { name: "Nautilus", loc: [25.6872, 32.6396], role: "GIS & Database Geologist" }
+            ];
+
+            var customIcon = L.divIcon({
+                className: 'custom-div-icon',
+                html: "<div style='background-color:#00dbe9;width:12px;height:12px;border-radius:50%;box-shadow:0 0 10px #00dbe9; border: 2px solid #0e131e'></div>",
+                iconSize: [12, 12],
+                iconAnchor: [6, 6]
+            });
+
+            locations.forEach(function(l) {
+                L.marker(l.loc, {icon: customIcon}).addTo(map)
+                 .bindPopup("<div class='font-mono text-xs p-1'><b>" + l.name + "</b><br>" + l.role + "</div>");
+            });
+
+            // Re-render map tiles correctly inside flex/grid layouts
+            setTimeout(function(){ map.invalidateSize(); }, 500);
+        }
+    });
+</script>
 {{ end }}
